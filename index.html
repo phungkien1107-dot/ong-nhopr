@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5b928">
+  <title>HiveHost · Cùng kết nối, cùng nhận mật ngọt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="model.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">✿</span><span>HiveHost<small>REFERRAL HOSTING</small></span></a>
+    <div class="nav-label">KHÔNG GIAN CỦA BẠN</div>
+    <nav aria-label="Điều hướng chính">
+      <a href="#overview" data-tab="overview"><span aria-hidden="true">◈</span> Tổng quan</a>
+      <a href="#members" data-tab="members"><span aria-hidden="true">♧</span> Thành viên</a>
+      <a href="#registrations" data-tab="registrations"><span aria-hidden="true">▤</span> Đăng ký & duyệt <b id="pending-count">0</b></a>
+      <a href="#economics" data-tab="economics"><span aria-hidden="true">↗</span> Phân tích kinh tế</a>
+      <a href="#rules" data-tab="rules"><span aria-hidden="true">❋</span> Thể lệ & ưu đãi</a>
+    </nav>
+    <div class="sidebar-note"><span aria-hidden="true">🐝</span><strong>Mỗi kết nối, một giá trị.</strong><p>Cùng xây tổ ấm cho những ý tưởng trên internet.</p></div>
+    <div class="local-note"><i></i> Lưu trên thiết bị này<small>Bản mô phỏng · Không thanh toán thật</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Chương trình giới thiệu <span class="separator">/</span> <strong id="breadcrumb">Tổng quan</strong></span><span class="pill">Bảng B · Kinh tế</span></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>HiveHost <span>·</span> Gieo kết nối, nhận mật ngọt.<small>Dữ liệu giao dịch mô phỏng được lưu riêng với dự phóng kinh tế.</small></footer>
+  </div>
+  <div id="notice" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="sample-dialog"><h2>Nạp dữ liệu mẫu?</h2><p>Thay thế toàn bộ thành viên, giao dịch, cấu hình và giả định đang lưu bằng bộ demo tạm. Dữ liệu hiện tại sẽ không thể khôi phục.</p><p>Đây chưa phải dữ liệu chính thức từ BTC (Ban tổ chức).</p><div class="actions"><button type="button" id="cancel-sample" class="button secondary">Giữ dữ liệu hiện tại</button><button type="button" id="confirm-sample" class="button">Đồng ý nạp mẫu</button></div></dialog>
+</body>
+</html>
